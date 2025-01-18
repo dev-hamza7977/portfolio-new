@@ -5,25 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <meta name="description"
+    content="Explore the portfolio of Meghani Hamza, a skilled frontend developer specializing in HTML, CSS, JavaScript, and modern web development frameworks.">
+  <meta name="keywords" content="Meghani Hamza, Frontend Developer, HTML, CSS, JavaScript, Portfolio">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <meta property="og:title" content="Meghani Hamza | Frontend Developer Portfolio">
+  <meta property="og:description"
+    content="Explore the portfolio of Meghani Hamza, showcasing web development skills and projects.">
+  <meta property="og:image" content="https://meghanihamza.netlify.app/assets/images/website-img.png">
+  <meta property="og:url" content="https://meghanihamza.netlify.app/">
+  <meta property="og:type" content="website">
 
-  <!--
-    - custom css link
-  -->
+  <link rel="canonical" href="https://meghanihamza.netlify.app/">
+
+  <title>Meghani Hamza | Frontend Developer Portfolio</title>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
+
 
 <body>
   <div id="custom-cursor">
@@ -204,7 +214,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="about" data-aos="flip-down">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -242,7 +252,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
           <ul class="service-list">
 
-            <li class="service-item">
+            <li class="service-item" data-aos="flip-left" data-aos="flip-left" data-aos-duration="2000">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg
@@ -259,7 +269,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-aos="flip-right" data-aos-duration="2000">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
@@ -275,7 +285,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-aos="flip-left" data-aos-duration="2000">
 
               <div class="service-icon-box">
                 <img src="./assets/images/shopify-logo.png" alt="mobile app icon" width="40">
@@ -291,7 +301,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-aos="flip-right" data-aos-duration="2000">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg" alt="camera icon" width="40">
@@ -525,7 +535,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
+        <section class="timeline" data-aos="flip-up" data-aos-duration="3000">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -563,7 +573,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
         </section>
 
-        <section class="timeline">
+        <section class="timeline" data-aos="flip-up" data-aos-duration="3000">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -629,7 +639,7 @@ hamza-meghani-7a6ba11a0" class="social-link">
 
         </section>
 
-        <section class="skill">
+        <section class="skill" data-aos="flip-up" data-aos-duration="3000">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -1177,6 +1187,12 @@ hamza-meghani-7a6ba11a0" class="social-link">
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (e) {
